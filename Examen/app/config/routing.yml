@@ -1,0 +1,16 @@
+turismo:
+    resource: "@TurismoBundle/Controller/"
+    type:     annotation
+    prefix:   /turismo
+
+usuarios:
+    resource: "@UsuariosBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+logout:
+    path: /usuarios/logout
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

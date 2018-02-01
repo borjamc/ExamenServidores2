@@ -1,0 +1,9 @@
+
+{% for usuario in usuarios %}
+
+      <h2>Usuario: {{ usuario.username }}</h2>
+      <p>Contraseña: {{usuario.password}}</p>
+      <p>Email: {{usuario.email}}</p>
+      <p><a href="{{ path('borrar', {'id': usuario.id}) }}">Borrar</a></p>
+      <p><a href="{{ path('editar', {'id': usuario.id}) }}">Actualizar</a></p>
+    {% endfor %}
